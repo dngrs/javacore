@@ -6,7 +6,7 @@ package com.dngrs.utils.convertors.runners;
 public class Lesson3Runner {
     public static void main(String[] args) {
         PrimitiveConvertor convertor = new PrimitiveConvertor();
-        convertor.floatToChar(10f);
+        convertor.floatToChar(65.5f);
         convertor.intToChar(Integer.MIN_VALUE);
         convertor.charToInt('#');
     }
