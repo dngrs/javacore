@@ -1,4 +1,4 @@
-package com.dngrs.utils.convertors.runners;
+package com.dngrs.utils.convertors;
 
 /**
  * Created by admin on 10/10/16.
@@ -22,5 +22,3 @@ public class PrimitiveConvertor {
         return i;
     }
 }
-
-
