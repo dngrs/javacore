@@ -3,8 +3,7 @@ import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 
-
-public class TestRunner {
+public class Lesson4Runner {
         public static void main(String[] args) {
             Result result = JUnitCore.runClasses(TestSortArray.class);
             System.out.println("Run tests: " + result.getRunCount());

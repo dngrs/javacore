@@ -112,7 +112,7 @@ public class TestSortArray {
         SortArray.sortArray(arrayBeforeSort);
     }
 
-    @Test
+    @Test (timeout=3000)
     public void testPerformanceCompareWithLibraryMethod(){
         int [] arrayBeforeSort = new int[100000];
         long timestampBeforeSort = System.currentTimeMillis();
