@@ -1,10 +1,10 @@
-package com.dngrs.utils.runners;
+package com.dngrs.runners;
 import com.dngrs.utils.convertors.*;
 
 /**
  * Created by admin on 10/10/16.
  */
-public class Lesson3Runner {
+public class Lesson3HomeworkRunner {
     public static void main(String[] args) {
         PrimitiveConvertor convertor = new PrimitiveConvertor();
         convertor.floatToChar(65.5f);

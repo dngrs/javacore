@@ -1,22 +1,15 @@
-package com.dngrs.app.homework.lesson7;
+package com.dngrs.runners;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
+import static com.dngrs.app.homework.lesson7.Lesson7Functions.*;
+
 public class Lesson7Homework {
     //Task 2a
     public static void fillArrayWithEvenNumbers() {
-        //Define array size
-        int size = 0;
-        for (int i = 2; i <= 20; i += 2) {
-            size = ++size;
-        }
         //Fill array
-        int[] array = new int[size];
-        int index = 0;
-        for (int i = 2; i <= 20; i += 2) {
-            array[index++] = i;
-        }
+        int[] array = fillArray(2, 20, 2);
         //Print array
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + " ");
@@ -30,17 +23,8 @@ public class Lesson7Homework {
 
     //Task 2b
     public static void fillArrayWithOddNumbers() {
-        //Define array size
-        int size = 0;
-        for (int i = 1; i <= 99; i += 2) {
-            size = ++size;
-        }
-        //Fill array
-        int[] array = new int[size];
-        int index = 0;
-        for (int i = 1; i <= 99; i += 2) {
-            array[index++] = i;
-        }
+        //Define array size and fill array
+        int[] array = fillArray(1, 99, 2);
         //Print array in one line
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + " ");
@@ -55,49 +39,24 @@ public class Lesson7Homework {
 
     //Task 2c
     public static void getNumberOfEvenElements() {
-        int[] array = new int[15];
-        int count = 0;
-        //Generate random array
-        for (int i = 0; i < array.length; i++) {
-            array[i] = (int) (Math.random() * 10);
-        }
-
+        //Generate random Array
+        int[] array = generateRandomArray(0, 9, 15);
         //Print array
         System.out.println("Generated array: " + Arrays.toString(array));
-
         //Count number of even elements
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] % 2 == 0) {
-                count = ++count;
-            }
-        }
+        int count = countEvenElements(array);
         System.out.println("Number of even elements is " + count);
     }
 
     //Task 2d
     public static void getMinMaxElement() {
         //Generate random array
-        int[] array = new int[15];
-        int index = 0;
-        for (int i = 0; i < array.length; i++) {
-            array[index++] = (int) (Math.random() * 1000);
-        }
-
+        int[] array = generateRandomArray(0, 999, 15);
         //Print array
         System.out.println("Array: " + Arrays.toString(array));
-
         //Find MIN and MAX element
-        int minElement = array[0];
-        int maxElement = array[0];
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] < minElement) {
-                minElement = array[i];
-            }
-            if (array[i] > maxElement) {
-                maxElement = array[i];
-            }
-        }
-
+        int minElement = getMinElement(array);
+        int maxElement = getMaxElement(array);
         //Print MIN and MAX element
         System.out.println("Min elemext: " + minElement);
         System.out.println("Max elemext: " + maxElement);
@@ -106,13 +65,7 @@ public class Lesson7Homework {
     //Task 2e
     public static void printTwoDimensionalArray() {
         //Generate random array
-        int[][] array = new int[8][5];
-        for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[i].length; j++) {
-                array[i][j] = (int) (Math.random() * 90 + 10);
-            }
-        }
-
+        int[][] array = fillTwoDimArrayRandom(8, 5, 10, 99);
         //Print array
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
@@ -125,13 +78,7 @@ public class Lesson7Homework {
     //Task 2g
     public static void formatTwoDimensionalArray() {
         //Generate random array
-        int[][] array = new int[8][5];
-        for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[i].length; j++) {
-                array[i][j] = (int) (Math.random() * 999 + 1);
-            }
-        }
-
+        int[][] array = fillTwoDimArrayRandom(8, 5, 1, 999);
         //Print array
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
@@ -142,7 +89,7 @@ public class Lesson7Homework {
     }
 
     //Task 2h
-    public static void  getSumOfEnteredElements() {
+    public static void getSumOfEnteredElements() {
         String exit = "exit";
         boolean condition = true;
         int sum = 0;
@@ -164,5 +111,4 @@ public class Lesson7Homework {
         } while (condition);
         System.out.println("Sum of entered numbers is " + sum);
     }
-
 }

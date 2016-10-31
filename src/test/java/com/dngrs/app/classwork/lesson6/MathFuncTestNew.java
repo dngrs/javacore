@@ -33,7 +33,7 @@ public class MathFuncTestNew {
 
     //Declares parameters here
     @Parameterized.Parameters(name = "{index}: multiply({0}*{1})={2}") //test log output
-    public static Iterable<Object[]> data1() {
+    public static Iterable<Object[]> data() {
         return Arrays.asList(new Object[][]{
                 {1, 1, 1}, //If parameter is “{ 2, 2, 4 }”,
                 {2, 2, 4}, // then {index} = test run # (from 0), {8, 2, 16}, // {0} = 2, {1} = 2, {2} = 2

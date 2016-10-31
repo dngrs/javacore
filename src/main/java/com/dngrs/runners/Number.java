@@ -1,4 +1,4 @@
-package com.dngrs.utils.runners;
+package com.dngrs.runners;
 import java.util.Arrays;
 public class Number {
 
