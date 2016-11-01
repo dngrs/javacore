@@ -1,5 +1,6 @@
 package com.dngrs.app.classwork.lesson9;
 
+import java.util.Arrays;
 
 /**
  * Created by admin on 10/29/16.
@@ -10,10 +11,6 @@ public class CharArray {
         for(int i = 0; i <charArray.length; i++){
             charArray[i] = (char)i;
         }
-        //System.out.println(Arrays.toString(charArray));
-        System.out.println("test123");
-        System.out.print("test123");
-        System.out.print("\r");
-        System.out.println("test123");
+        System.out.println(Arrays.toString(charArray));
     }
 }
