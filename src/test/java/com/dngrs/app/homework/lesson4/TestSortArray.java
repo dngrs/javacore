@@ -1,10 +1,16 @@
 package com.dngrs.app.homework.lesson4;
 
+import org.junit.BeforeClass;
 import org.junit.Test;
 import java.util.Arrays;
 import static org.junit.Assert.*;
 
 public class TestSortArray {
+
+    @BeforeClass
+    public static void createTestInstance(){
+        SortArray testInstance = new SortArray();
+    }
 
     @Test(expected = java.lang.NullPointerException.class)
     public void testNullArray() {
@@ -106,15 +112,15 @@ public class TestSortArray {
         assertTrue(lengthBeforeSort == SortArray.sortArray(arrayBeforeSort).length);
     }
 
-    @Test (timeout=3000)
+    @Test (timeout=4000)
     public void testPerformanceOfSorting(){
         int [] arrayBeforeSort = new int[100000];
         SortArray.sortArray(arrayBeforeSort);
     }
 
-    @Test (timeout=3000)
+    @Test (timeout=20000)
     public void testPerformanceCompareWithLibraryMethod(){
-        int [] arrayBeforeSort = new int[100000];
+        int [] arrayBeforeSort = new int[10000];
         long timestampBeforeSort = System.currentTimeMillis();
         SortArray.sortArray(arrayBeforeSort);
         long timestampAfterSort = System.currentTimeMillis();

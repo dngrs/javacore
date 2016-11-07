@@ -14,8 +14,8 @@ public class BasicTest {
     //Assume we are testing sorting methods
 //Assume that with the same input data each method should have some specific results
 // in practice difference between sorting methods is time, but we will use earthier solution
-    private static final String INPUT_DATA = "/src/test/resources/input.txt";
-    private static final String EXPECTED_RESULTS = "/src/test/resources/expected.txt";
+    private static final String INPUT_DATA = "src/test/resources/input.txt";
+    private static final String EXPECTED_RESULTS = "src/test/resources/expected.txt";
     private static int[] inputData = null;
     private static int[] expectedResults = null;
 
@@ -71,7 +71,7 @@ public class BasicTest {
         String line;
         if ((line = reader.readLine()) != null) {
             String[] array = new String[line.split(",").length];
-            //array = line.split(",");
+            array = line.split(",");
             result = fromStringArray(array);
         }
         reader.close();

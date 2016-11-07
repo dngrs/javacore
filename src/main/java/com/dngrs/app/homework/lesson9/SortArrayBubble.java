@@ -5,7 +5,6 @@ package com.dngrs.app.homework.lesson9;
  */
 
 public class SortArrayBubble {
-    //
     public static int[] sortBubbleAsc(int[] array) {
         for (int i = 0; i < array.length; i++) {
             boolean isSorted = true;
@@ -22,7 +21,7 @@ public class SortArrayBubble {
         return array;
     }
 
-    public static int[] sortBubbleDes(int[] array) {
+    public static int[] sortBubbleDesc(int[] array) {
         for (int i = 0; i < array.length; i++) {
             boolean isSorted = true;
             for (int j = 0; j < array.length - 1 - i; j++) {

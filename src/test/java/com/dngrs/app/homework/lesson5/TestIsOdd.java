@@ -1,6 +1,5 @@
 package com.dngrs.app.homework.lesson5;
 
-import com.dngrs.app.classwork.lesson5.Calculator;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -40,7 +39,7 @@ public class TestIsOdd {
     }
 
     @After
-    public void tearDwon() {
+    public void tearDown() {
         calc = null;
     }
 }

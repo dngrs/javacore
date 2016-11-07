@@ -1,4 +1,4 @@
-package com.dngrs.runners;
+package com.dngrs.runners.lesson3;
 import com.dngrs.utils.convertors.*;
 
 /**

@@ -1,4 +1,4 @@
-package com.dngrs.app.classwork.lesson5;
+package com.dngrs.app.homework.lesson5;
 
 public class Calculator {
 

@@ -1,6 +1,6 @@
-package com.dngrs.runners;
+package com.dngrs.runners.lesson5;
 
-import com.dngrs.app.classwork.lesson5.Calculator;
+import com.dngrs.app.homework.lesson5.Calculator;
 
 import java.util.Scanner;
 

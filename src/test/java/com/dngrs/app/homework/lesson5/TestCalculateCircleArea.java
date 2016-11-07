@@ -1,6 +1,5 @@
 package com.dngrs.app.homework.lesson5;
 
-import com.dngrs.app.classwork.lesson5.Calculator;
 import junitparams.FileParameters;
 import junitparams.JUnitParamsRunner;
 import junitparams.mappers.CsvWithHeaderMapper;

@@ -1,4 +1,4 @@
-package com.dngrs.runners;
+package com.dngrs.runners.lesson7;
 
 
 import java.util.Scanner;
@@ -56,6 +56,4 @@ public class Lesson7HomeworkRunner {
         } while (exitCondition);
         System.out.println("Exiting program ...");
     }
-
-
 }

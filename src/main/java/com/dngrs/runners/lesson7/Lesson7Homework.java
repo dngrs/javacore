@@ -1,4 +1,4 @@
-package com.dngrs.runners;
+package com.dngrs.runners.lesson7;
 
 import java.util.Arrays;
 import java.util.Scanner;
