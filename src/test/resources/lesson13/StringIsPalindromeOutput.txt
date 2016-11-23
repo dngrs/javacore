@@ -1,0 +1,6 @@
+'' is palindrome: true
+'q' is palindrome: true
+'asddsa' is palindrome: true
+'QwRtrWq' is palindrome: true
+'12345' is palindrome: false
+'qweQWE' is palindrome: false

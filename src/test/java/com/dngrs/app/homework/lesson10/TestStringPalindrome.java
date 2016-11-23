@@ -9,8 +9,8 @@ import java.util.ArrayList;
  * Created by I. Odokienko on 11/7/16.
  */
 public class TestStringPalindrome {
-    private static final String INPUT_DATA = "src/test/resources/StringIsPalindromeInput.txt";
-    private static final String EXPECTED_RESULTS = "src/test/resources/StringIsPalindromeExpected.txt";
+    private static final String INPUT_DATA = "src/test/resources/lesson10/StringIsPalindromeInput.txt";
+    private static final String EXPECTED_RESULTS = "src/test/resources/lesson10/StringIsPalindromeExpected.txt";
     private static ArrayList<String> inputData = null;
     private static ArrayList<Boolean> expectedResults = null;
     private static StringPalindrome testClassInstance = null;
@@ -71,5 +71,4 @@ public class TestStringPalindrome {
         inputData = null;
         expectedResults = null;
     }
-
 }

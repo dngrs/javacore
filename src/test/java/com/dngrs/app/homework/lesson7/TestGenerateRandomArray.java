@@ -12,13 +12,13 @@ import static com.dngrs.app.homework.lesson7.Lesson7Functions.generateRandomArra
 @RunWith(JUnitParamsRunner.class)
 public class TestGenerateRandomArray {
     @Test
-    @FileParameters(value = "src/test/resources/checkArrayLength.scv", mapper = CsvWithHeaderMapper.class)
+    @FileParameters(value = "src/test/resources/lesson7/checkArrayLength.scv", mapper = CsvWithHeaderMapper.class)
     public void checkArrayLength(int expectedSize, int min, int max, int size){
         Assert.assertEquals(expectedSize, generateRandomArray(min,max,size).length);
     }
 
     @Test
-    @FileParameters(value = "src/test/resources/checkArrayLength.scv", mapper = CsvWithHeaderMapper.class)
+    @FileParameters(value = "src/test/resources/lesson7/checkArrayLength.scv", mapper = CsvWithHeaderMapper.class)
     public void checkElementValue(int expectedSize, int min, int max, int size){
         int [] array = generateRandomArray(min,max,size);
         for (int i = 0; i<array.length; i++){

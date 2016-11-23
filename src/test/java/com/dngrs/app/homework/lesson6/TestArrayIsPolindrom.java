@@ -32,7 +32,7 @@ public class TestArrayIsPolindrom {
     @Test
     public void checkPolindromArray() {
         Assert.assertEquals(ArrayIsPolindrom.isPolindrom(array), isPolindrom);
-        System.out.println("Array " + Arrays.toString(array) + " is polindrom: " + isPolindrom);
+        System.out.println("Array " + Arrays.toString(array) + " is palindrome: " + isPolindrom);
     }
 
     @Before

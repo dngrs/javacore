@@ -11,7 +11,7 @@ import static com.dngrs.app.homework.lesson7.Lesson7Functions.fillTwoDimArrayRan
 @RunWith(JUnitParamsRunner.class)
 public class TestFillTwoDimArrayRandom {
     @Test
-    @FileParameters(value = "src/test/resources/fillTwoDimArrayRandom.scv", mapper = CsvWithHeaderMapper.class)
+    @FileParameters(value = "src/test/resources/lesson7/fillTwoDimArrayRandom.scv", mapper = CsvWithHeaderMapper.class)
     public void checkArrayLength(int iSize, int jSize, int min, int max) {
         int [][] array = fillTwoDimArrayRandom(iSize, jSize, min, max);
         Assert.assertEquals(iSize, array.length);
@@ -21,7 +21,7 @@ public class TestFillTwoDimArrayRandom {
     }
 
     @Test
-    @FileParameters(value = "src/test/resources/fillTwoDimArrayRandom.scv", mapper = CsvWithHeaderMapper.class)
+    @FileParameters(value = "src/test/resources/lesson7/fillTwoDimArrayRandom.scv", mapper = CsvWithHeaderMapper.class)
     public void checkElementValue(int iSize, int jSize, int min, int max) {
         int[][] array = fillTwoDimArrayRandom(iSize, jSize, min, max);
         for (int i = 0; i < array.length; i++) {
