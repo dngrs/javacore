@@ -1,0 +1,7 @@
+Friends,Mike,044-44444
+Friends,Jonh,1111
+Work,mikky,044-090909
+Home,sister,113111
+Home,mother,898989
+Home,father,101010
+Other,unknown,0637463578

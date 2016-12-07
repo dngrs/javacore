@@ -21,7 +21,7 @@ public class WriteIsPalindrome {
                 )
         );
         while ((myLine = reader.readLine()) != null) {
-            writer.append("\'" + myLine + "\'" + " is palindrome: " + String.valueOf(StringPalindrome.isPalindromeStrBuilder(myLine)));
+            writer.append(myLine + " is palindrome: " + String.valueOf(StringPalindrome.isPalindromeStrBuilder(myLine)));
             writer.newLine();
         }
         reader.close();

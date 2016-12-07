@@ -21,7 +21,7 @@ public class PropertyFile {
                 )
         );
         for (String keys: propertyMap.keySet()) {
-            writer.append(keys + "=" + propertyMap.get(keys));
+            writer.append(keys + " = " + propertyMap.get(keys));
             writer.newLine();
         }
         writer.close();

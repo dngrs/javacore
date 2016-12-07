@@ -1,0 +1,5 @@
+dbUser,user
+dbPassword,pass
+dbName,database1
+dbHost,localhost
+dbName,database2

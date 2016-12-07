@@ -5,11 +5,17 @@ package com.dngrs.app.classwork.lesson15;
  */
 public class Runner {
     public static void main(String[] args) {
-        Person pers;
+        Student student = new Student("Egor", "Kit Center");
+        System.out.println(student.getResponce("What is class?"));
 
-        pers = new Teacher("Teach", "HI");
-        System.out.println(pers.getResponce("responce"));
-        pers = new Student("Stud", "Heloo");
-        System.out.println(pers.getResponce("responce"));
+        Teacher teacher = new Teacher("Ivan", "Kit Center");
+        System.out.println(teacher.getResponce("What is class?"));
+
+        Person person = new Student("Max", "Kit Center");
+        System.out.println(person.getResponce("What is class?"));
+
+        person = new Teacher("Evgen","Kit Center");
+        System.out.println(person.getResponce("What is class?"));
+
     }
 }

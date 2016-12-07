@@ -16,7 +16,7 @@ public class Student extends Person {
         return "test";
     }
 
-    @Override
+    //@Override
     public String getName(){
         return super.name;
     }

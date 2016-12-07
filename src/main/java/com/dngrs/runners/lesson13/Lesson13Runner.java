@@ -6,10 +6,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import static com.dngrs.app.homework.lesson13.PropertyFile.writePropertyFile;
-import static com.dngrs.app.homework.lesson13.WriteIntArrayToFile.readIntArrayFromFile;
 import static com.dngrs.app.homework.lesson13.WriteIntArrayToFile.writeIntArraysToFile;
 import static com.dngrs.app.homework.lesson13.WriteIsPalindrome.writeIsPalindromeToFile;
-import static com.dngrs.app.homework.lesson13.WtiteTextToFile.writeTextFromBufferToFile;
+import static com.dngrs.runners.lesson13.WriteTextToFile.writeTextFromBufferToFile;
 
 /**
  * Created by I. Odokienko on 11/22/16.
@@ -19,7 +18,6 @@ public class Lesson13Runner {
         boolean exitCondition = true;
         do {
             System.out.println("MENU");
-            System.out.println("To check if string is palindrome, select one of available algorithms:");
             System.out.println("1 - Read array from file, sort and then write to file");
             System.out.println("2 - Read strings from file, check on palindrome, write to file");
             System.out.println("3 - Write input text to file");
@@ -31,10 +29,9 @@ public class Lesson13Runner {
                 if (item > 0 && item <= 6) {
                     switch (item) {
                         case 1:
-                            String fileName = "WriteArray.txt";
                             String inputFile = "src/test/resources/lesson13/ReadArray.txt";
-                            ArrayList<int[]> fromFile = readIntArrayFromFile(inputFile);
-                            File output = writeIntArraysToFile(fromFile, fileName);
+                            String fileName = "WriteArray.txt";
+                            File output = writeIntArraysToFile(inputFile, fileName);
                             break;
                         case 2:
                             String inputFileName = "src/test/resources/lesson13/StringIsPalindromeInput.txt";

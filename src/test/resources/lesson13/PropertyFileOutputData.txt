@@ -1,0 +1,4 @@
+dbName = database2
+dbUser = user
+dbHost = localhost
+dbPassword = pass

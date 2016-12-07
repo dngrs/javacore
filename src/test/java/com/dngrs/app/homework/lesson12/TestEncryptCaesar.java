@@ -36,7 +36,7 @@ public class TestEncryptCaesar {
     }
 
     @Test
-    public void TestDodeCaesar() {
+    public void TestDecodeCaesar() {
         for (int i = 0; i < inputData.size(); i++) {
             Assert.assertEquals(testClassInstance.decodeCaesar(expectedResult.get(i), offset[i]), inputData.get(i));
         }

@@ -1,4 +1,4 @@
-package com.dngrs.app.homework.lesson13;
+package com.dngrs.runners.lesson13;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -6,10 +6,10 @@ import java.util.ArrayList;
 /**
  * Created by I. Odokienko on 11/18/16.
  */
-public class WtiteTextToFile {
+public class WriteTextToFile {
 
     public static File writeTextFromBufferToFile(String fileName, ArrayList<String> resultSet) throws IOException {
-        File outputFile = new File("/Users/admin/projects/javacore/src/test/resources/lesson13/" + fileName);
+        File outputFile = new File("src/test/resources/lesson13/" + fileName);
         BufferedWriter writer = new BufferedWriter(
                 new OutputStreamWriter(
                         new FileOutputStream(outputFile)
